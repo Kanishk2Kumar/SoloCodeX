@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: #000000;
 }
 
 @layer components {
@@ -54,5 +55,8 @@
 
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+  .bg-gradient-custom {
+    background: linear-gradient(to right, #FF9898, #8054FF);
   }
 }
