@@ -28,9 +28,11 @@ export default {
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
         "gradient-custom": "linear-gradient(to right, #FF9898, #8054FF)",
+        "footer-color": "#18181C",
       },
       boxShadow: {
-        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
+        '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',
+        'glow': '0 0 10px rgba(255, 255, 255, 0.6)',
       },
       backgroundImage: {
         'hero': "url('assets/images/collection-background.svg')",

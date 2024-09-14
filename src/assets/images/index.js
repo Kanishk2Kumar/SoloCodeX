@@ -1,4 +1,4 @@
-import headerLogo from "./headerLogo.png";
+import headerLogo from "./headerLogo.jpg";
 
 export {
     headerLogo

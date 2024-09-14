@@ -28,11 +28,11 @@ const Nav = () => {
                   label="Register"
                   backgroundColor="bg-gradient-custom"     /* Custom Background Color */
                   textColor="text-white"            
-                  borderColor="border-transparent"  
+                  borderColor="border-black"  
                   fullWidth={false}                 
                 />
             </ul>
-            <div className='hidden max-lg:block bg-white'>
+            <div className='hidden max-lg:block'>
                 <img 
                     src={hamburger}
                     alt='Hamburger'
