@@ -12,10 +12,10 @@ const App = () => {
   return (
     <main className='relative'>
       <Nav />
-      <section className='bg-black xl:padding-l wide:padding-r padding-b'>
+      <section className='bg-black'>
         <Hero />
       </section>
-      <section className='bg-black padding'>
+      <section className='bg-black'>
         <AboutEvent />
       </section>
       <section className='bg-black padding'>

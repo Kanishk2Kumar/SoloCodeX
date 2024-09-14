@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InputField from '../components/InputField'; // Adjust path as needed
 import Button from '../components/Button'; // Adjust path as needed
+import { useInView } from 'react-intersection-observer'; // Import the hook for visibility tracking
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -25,10 +26,13 @@ const Register = () => {
     console.log('Form data submitted:', formData);
   };
 
+  // Use the intersection observer to track when the form comes into view
+  const { ref: formRef, inView: formVisible } = useInView({ triggerOnce: true });
+
   return (
-    <section className="max-w-7xl mx-auto p-6 bg-black flex items-center">
+    <section className="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-black flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
       {/* Image on the left */}
-      <div className="flex-shrink-0 w-1/3 p-6">
+      <div className="w-full md:w-1/3 p-6">
         <img
           src="/path/to/your/image.jpg"  // Replace with your image path
           alt="Registration"
@@ -37,9 +41,13 @@ const Register = () => {
       </div>
 
       {/* Form on the right */}
-      <div className="w-2/3 p-6">
-        <h2 className="text-4xl font-bold text-white text-left mb-2 ml-6 font-palanquin">Register</h2>
-        <form onSubmit={handleSubmit} className="bg-black bg-opacity-20 p-8 pr-20 rounded-lg shadow-lg">
+      <div className="w-full md:w-2/3 p-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-white text-left mb-4 ml-2 md:ml-6 font-palanquin">Register</h2>
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className={`bg-black bg-opacity-20 p-4 md:p-8 pr-4 md:pr-20 rounded-lg shadow-lg transition-transform duration-1000 ease-in-out ${formVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
+        >
           <InputField
             id="name"
             name="name"
@@ -85,12 +93,14 @@ const Register = () => {
             label="Year"
             required
           />
-          <Button
-            label="Register"
-            backgroundColor="bg-gradient-custom"
-            textColor="text-white"
-            borderColor="border-black"
-          />
+          <div className="mt-6">
+            <Button
+              label="Register"
+              backgroundColor="bg-gradient-custom"
+              textColor="text-white"
+              borderColor="border-black"
+            />
+          </div>
         </form>
       </div>
     </section>

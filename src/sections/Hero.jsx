@@ -1,8 +1,11 @@
 import React from 'react'
+import { LampDemo } from '../components/LampDemo'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div>
+      <LampDemo />
+    </div>
   )
 }
 

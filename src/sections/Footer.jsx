@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20flex-wrap max-lg:flex-col">
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap mt-10">
-          <div className="flex flex-col items-start mt-8">
+          <div className="flex flex-col items-start mt-6">
             <a href="/">
               <img src={headerLogo} width={50} height={50} />
             </a>

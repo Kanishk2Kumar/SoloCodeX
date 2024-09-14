@@ -40,7 +40,26 @@ export default {
       },
       screens: {
         "wide": "1440px"
-      }
+      },
+      keyframes: {
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideLeft: {
+          '0%': { transform: 'translateX(20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideRight: {
+          '0%': { transform: 'translateX(-20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        slideUp: 'slideUp 1s ease-out',
+        slideLeft: 'slideLeft 1s ease-out',
+        slideRight: 'slideRight 1s ease-out',
+      },
     },
   },
   plugins: [],
