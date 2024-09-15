@@ -25,7 +25,7 @@ export function LampDemo() {
         <h2 className="text-2xl text-white mt-6 font-montserrat">
           Sep 25, 2024 - Sep 26 2024
         </h2>
-        <p className="text-lg text-gray-300 mt-4 max-w-xl mx-auto">
+        <p className="text-lg text-gray-300 mt-6 max-w-xl mx-auto">
           Prepare yourself for an intense and thrilling coding competition where
           the best minds will compete for amazing prizes. Sharpen your coding
           skills and join us for SoloCodeX!

@@ -5,27 +5,57 @@ const AboutEvent = () => {
   return (
     <section className="max-w-6xl mx-auto p-6 bg-black flex flex-col-reverse md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
       {/* Text content on the left */}
-      <div className="w-full md:w-3/5 p-6 pl-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-palanquin">About the Event</h1>
-        <p className="text-lg text-gray-300 mb-6">
-          Join us for an exciting event filled with amazing activities, speakers, and prizes! It's a great opportunity to connect, learn, and have fun with like-minded individuals. We can't wait to see you there.
-          Join us for an exciting event filled with amazing activities, speakers, and prizes! It's a great opportunity to connect, learn, and have fun with like-minded individuals. We can't wait to see you there.
-        </p>
-        <Button
-          label="Learn More"
-          backgroundColor="bg-gradient-custom"
-          textColor="text-white"
-          borderColor="border-black"
-        />
-      </div>
 
-      <div className="w-full md:w-2/5 p-6">
-        <img
-          src="/path/to/your/image.jpg"  // Replace with your image path
-          alt="Event"
-          className="w-full h-auto rounded-lg"
-        />
-      </div>
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-palanquin">About the Event</h1>
+      
+      /* From Uiverse.io by 05akalan57 */ 
+      <aside class="bg-black text-white p-8 rounded-lg w-full max-w-2xl font-mono">
+  <div class="flex justify-between items-center mb-6">
+    <div class="flex space-x-2 text-red-500">
+      <div class="w-4 h-4 rounded-full bg-red-500"></div>
+      <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
+      <div class="w-4 h-4 rounded-full bg-green-500"></div>
+    </div>
+    <p class="text-lg">bash</p>
+  </div>
+
+  <div>
+    <h2 class="text-2xl font-bold text-green-400 mb-4">$ Rules</h2>
+    <ol class="list-decimal list-inside text-white text-lg space-y-4">
+      <li>Follow all instructions carefully.</li>
+      <li>Do not share confidential information.</li>
+      <li>Submit tasks before the deadline.</li>
+      <li>Be respectful and professional at all times.</li>
+      <li>Provide feedback for continuous improvement.</li>
+    </ol>
+    <p class="text-green-400 mt-6">$</p>
+  </div>
+</aside>
+  {/* second */}
+  <aside class="bg-black text-white p-8 rounded-lg w-full max-w-2xl font-mono">
+  <div class="flex justify-between items-center mb-6">
+    <div class="flex space-x-2 text-red-500">
+      <div class="w-4 h-4 rounded-full bg-red-500"></div>
+      <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
+      <div class="w-4 h-4 rounded-full bg-green-500"></div>
+    </div>
+    <p class="text-lg">bash</p>
+  </div>
+
+
+  <div>
+    <h2 class="text-2xl font-bold text-green-400 mb-4">$ Competition Structure</h2>
+    <ul class="list-disc list-inside text-white text-lg space-y-4">
+      <li>Round 1: Problem-solving challenge.</li>
+      <li>Round 2: Coding challenge.</li>
+      <li>Round 3: Reverse engineering task.</li>
+      <li>Round 4: Final presentation.</li>
+    </ul>
+    <p class="text-green-400 mt-6">$</p>
+  </div>
+</aside>
+
+
     </section>
   );
 };

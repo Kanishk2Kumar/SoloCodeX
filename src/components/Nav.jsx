@@ -9,8 +9,8 @@ const Nav = () => {
         <nav className='flex justify-between items-center max-container'>
             <a href='/'>
                 <img src={headerLogo} alt="Logo"
-                width={60}
-                height={60}
+                width={50}
+                height={50}
                 />
             </a>
             <ul className='flex-1 flex justify-center gap-16 max-lg items-center max-lg:hidden'>
