@@ -1,4 +1,4 @@
-import {headerLogo} from '../assets/images';
+import {LightTheme} from '../assets/images';
 import {hamburger} from "../assets/icons";
 import { navLinks } from "../constants";
 import Button from './Button';
@@ -8,8 +8,8 @@ const Nav = () => {
     <header className='padding-x py-8 absolute z-10 w-full'>
         <nav className='flex justify-between items-center max-container'>
             <a href='/'>
-                <img src={headerLogo} alt="Logo"
-                width={50}
+                <img src={LightTheme} alt="Logo"
+                width={120}
                 height={50}
                 />
             </a>

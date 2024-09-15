@@ -15,16 +15,16 @@ const App = () => {
       <section className='bg-black'>
         <Hero />
       </section>
-      <section className='bg-black'>
+      <section className='bg-black' id="about-event">
         <AboutEvent />
       </section>
-      <section className='bg-black padding'>
+      <section className='bg-black padding' id="prizes">
         <Prizes />
       </section>
-      <section className='bg-black padding-x py-10'>
+      <section className='bg-black padding-x' id="sponsors">
         <OurSponsors />
       </section>
-      <section className='bg-black padding'>
+      <section className='bg-black padding' id="Register">
         <Register />
       </section>
       <section className=' bg-footer-color padding-x padding-t pb-8'>

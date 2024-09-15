@@ -1,5 +1,5 @@
 import React from "react";
-import { headerLogo } from "../assets/images";
+import { LightTheme } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 import { copyrightSign } from "../assets/icons";
 
@@ -8,9 +8,9 @@ const Footer = () => {
     <footer className="max-container">
       <div className="flex justify-between items-start gap-20flex-wrap max-lg:flex-col">
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap mt-10">
-          <div className="flex flex-col items-start mt-6">
+          <div className="flex flex-col items-start mt-2">
             <a href="/">
-              <img src={headerLogo} width={50} height={50} />
+              <img src={LightTheme} width={130} height={50} />
             </a>
             <p className='mt-8 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
               Computer Society of India is a body of computer professionals in India. It was started on 6 March 1965.

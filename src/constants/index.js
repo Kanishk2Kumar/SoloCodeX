@@ -7,10 +7,10 @@ export const footerLinks = [
     {
         title: "Help",
         links: [
-            { name: "About Event", link: "/" },
-            { name: "Prizes", link: "/" },
-            { name: "Sponsors", link: "/" },
-            { name: "Register", link: "/" },
+            { name: "About Event", link: "#about-event" },
+            { name: "Prizes", link: "#prizes" },
+            { name: "Sponsors", link: "#sponsors" },
+            { name: "Register", link: "#Register" },
         ],
     },
     {
