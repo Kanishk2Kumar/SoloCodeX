@@ -6,7 +6,7 @@ const AboutEvent = () => {
     <section className="max-w-6xl mx-auto p-6 bg-black flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
       {/* Text content on the left */}
       <div className="w-full md:w-1/3">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 font-palanquin">
+        <h1 className="bg-gradient-to-br from-[#FF9898] to-[#8054FF]  py-4 bg-clip-text tracking-tight text-transparent text-8xl md:text-5xl font-bold mb-4 font-chakrapetch">
           About the Event
         </h1>
       </div>

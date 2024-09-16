@@ -57,7 +57,7 @@ const Register = () => {
 
       {/* Form on the right */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-left mb-4 ml-2 md:ml-6 font-palanquin">
+        <h2 className="text-4xl font-chakrapetch font-bold text-left bg-gradient-to-r from-[#FF9898] to-[#8054FF] bg-clip-text text-transparent">
           Register
         </h2>
         <form
